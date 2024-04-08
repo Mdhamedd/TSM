@@ -1,0 +1,139 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  --first-color: #3733d5;
+  --seconed-color: #9b51e0;
+  --third-color: #de9afb;
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.75rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.813rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+}
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
+body {
+  color: var(--black-color);
+  background: linear-gradient(
+    45deg,
+    var(--first-color),
+    var(--seconed-color),
+    var(--third-color)
+  );
+  /* animation: animate 15s ease infinite;
+  -webkit-animation: animate 15.5s ease-in infinite; */
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  font-family: "Mona Sans";
+  letter-spacing: 1px;
+}
+
+/* ================== Start Add ============== */
+
+.Add {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.Add__form {
+  position: relative;
+  background-color: #fff;
+  border: 2px solid var(--white-color);
+  margin-inline: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+  margin-bottom: 20px;
+}
+.Add__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust as needed */
+}
+
+.centered {
+  font-size: 2em; /* Adjust as needed */
+}
+/*=============== END ADDPAGE ===============*/
+
+/*=============== START RESPOSIVE ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .Add {
+    justify-content: center;
+  }
+  .Add__form {
+    width: 432px;
+    padding: 4rem 3rem 3.5rem;
+    border-radius: 1.5rem;
+  }
+  .Add__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .Add {
+    justify-content: center;
+  }
+  .Add__form {
+    width: 400px;
+    padding: 4rem 3rem 3.5rem;
+    border-radius: 1.5rem;
+  }
+  .Add__title {
+    font-size: 2rem;
+  }
+}
+/* For Large devices */
+@media screen and (max-width: 800px) {
+  .Add {
+    justify-content: center;
+  }
+  .Add__form {
+    width: 400px;
+    padding: 4rem 3rem 3.5rem;
+    border-radius: 1.5rem;
+  }
+  .Add__title {
+    font-size: 2rem;
+  }
+}

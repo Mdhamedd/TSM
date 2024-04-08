@@ -55,14 +55,17 @@ a {
 
 h1 {
   display: flex;
+  font-family: var(--body-font);
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   color: #fff;
+  font-family: "Mona Sans";
+  letter-spacing: 1px;
 }
 
-/*=============== START LOGIN ===============*/
+/*=============== START Signin ===============*/
 /*=============== START RADIO ===============*/
 .radio-input input {
   display: none;
@@ -80,7 +83,7 @@ h1 {
   width: var(--container_width);
   overflow: hidden;
   border: 1px solid rgba(53, 52, 52, 0.226);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .radio-input label {
@@ -94,6 +97,7 @@ h1 {
   font-weight: 600;
   letter-spacing: -1px;
   font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .selection {
@@ -133,21 +137,15 @@ h1 {
   transform: translateX(calc(var(--container_width) * 2 / 3));
 }
 /*=============== END RADIO ===============*/
+/* ================== Start Signin ============== */
 
-.login {
+.Signin {
   position: relative;
   height: 100vh;
   display: grid;
   align-items: center;
 }
-.login__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.login__form {
+.Signin__form {
   position: relative;
   background-color: #fff;
   border: 2px solid var(--white-color);
@@ -157,11 +155,11 @@ h1 {
   backdrop-filter: blur(8px);
   margin-bottom: 20px;
 }
-.login__title {
+.Signin__title {
   text-align: center;
   font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   color: #3c3548;
 }
 h4 {
@@ -170,29 +168,29 @@ h4 {
   margin-bottom: 2rem;
   color: #726c7c;
 }
-.login__content,
-.login__box {
+.Signin__content,
+.Signin__box {
   display: grid;
 }
-.login__content {
+.Signin__content {
   row-gap: 1.75rem;
   margin-bottom: 1.5rem;
 }
-.login__box {
+.Signin__box {
   grid-template-columns: max-content 1fr;
   align-items: center;
   column-gap: 0.75rem;
   border-bottom: 1px solid var(--black-color);
   color: #888;
 }
-.login__icon {
+.Signin__icon {
   color: var(--black-color);
 }
-.login__icon,
-.login__eye {
+.Signin__icon,
+.Signin__eye {
   font-size: 1.25rem;
 }
-.login__input {
+.Signin__input {
   width: 100%;
   padding-block: 0.8rem;
   background: none;
@@ -200,42 +198,42 @@ h4 {
   position: relative;
   z-index: 1;
 }
-.login__box-input {
+.Signin__box-input {
   position: relative;
 }
-.login__label {
+.Signin__label {
   position: absolute;
   left: 0;
   top: 13px;
   font-weight: var(--font-medium);
   transition: top 0.3s, font-size 0.3s;
 }
-.login__eye {
+.Signin__eye {
   position: absolute;
   right: 0;
   top: 18px;
   z-index: 10;
   cursor: pointer;
 }
-.login__box:nth-child(2) input {
+.Signin__box:nth-child(2) input {
   padding-right: 1.8rem;
 }
-.login__check,
-.login__check-group {
+.Signin__check,
+.Signin__check-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.login__check {
+.Signin__check {
   margin-bottom: 1.5rem;
 }
-.login__check-label,
-.login__forgot,
-.login__register {
+.Signin__check-label,
+.Signin__forgot,
+.Signin__register {
   font-size: var(--small-font-size);
 }
 
-.login__button {
+.Signin__button {
   width: 100%;
   padding: 1rem;
   border-radius: 1rem;
@@ -258,17 +256,18 @@ h4 {
 }
 
 /* Input focus move up label */
-.login__input:focus + .login__label {
+.Signin__input:focus + .Signin__label {
   top: -12px;
   font-size: var(--small-font-size);
 }
 
 /* Input focus sticky top label */
-.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
+.Signin__input:not(:placeholder-shown).Signin__input:not(:focus)
+  + .Signin__label {
   top: -12px;
   font-size: var(--small-font-size);
 }
-/*=============== END LOGIN ===============*/
+/*=============== END Signin ===============*/
 
 /*============== START ANIMATION ==================*/
 /* @keyframes animate {
@@ -287,42 +286,42 @@ h4 {
 /*=============== START RESPOSIVE ===============*/
 /* For medium devices */
 @media screen and (min-width: 576px) {
-  .login {
+  .Signin {
     justify-content: center;
   }
-  .login__form {
+  .Signin__form {
     width: 432px;
     padding: 4rem 3rem 3.5rem;
     border-radius: 1.5rem;
   }
-  .login__title {
+  .Signin__title {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 600px) {
-  .login {
+  .Signin {
     justify-content: center;
   }
-  .login__form {
+  .Signin__form {
     width: 400px;
     padding: 4rem 3rem 3.5rem;
     border-radius: 1.5rem;
   }
-  .login__title {
+  .Signin__title {
     font-size: 2rem;
   }
 }
 /* For Large devices */
 @media screen and (max-width: 800px) {
-  .login {
+  .Signin {
     justify-content: center;
   }
-  .login__form {
+  .Signin__form {
     width: 400px;
     padding: 4rem 3rem 3.5rem;
     border-radius: 1.5rem;
   }
-  .login__title {
+  .Signin__title {
     font-size: 2rem;
   }
 }
