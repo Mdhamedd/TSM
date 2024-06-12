@@ -1,0 +1,183 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: block;
+  padding: 20px;
+  background: #fff;
+}
+ /* Select BTN */
+ .select-container{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  min-width: 250px;
+  height: 50px;
+  top: 0;
+  margin-bottom: 25px;
+  margin-right: 20px;
+ }
+ .select-box{
+  border: 1px solid #707070;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 30px 0 15px;
+  font-style: 20px;
+  font-size: 15px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+ .select-box:hover{
+  background: #ebe5e5;
+ }
+ option{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #707070;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+} 
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+  transition: 0.5s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+.btn {
+    height: 55px;
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 10%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: green;
+    transition: 0.5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.btn:hover {
+    background: rgb(26, 216, 26);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .btn{
+    padding-left: 4%;
+    margin-right: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .btn{
+    padding-left: 10%;
+  }
+}
