@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Teacher Statistic</title>
+  </head>
+  <body>
+    <div class="field-wrapper" style="display: inline-block">
+      Time now is : <span style="color: blue" id="timer"></span>
+    </div>
+    <form action="">
+      <div class="field-wrapper">
+        <label class="lab" for="sub">Subject :</label>
+        <select name="" id="sub" class="select-active">
+          <option value="Arabic">Arabic</option>
+          <option value="Biology">Biology</option>
+          <option value="Chemistry">Chemistry</option>
+          <option value="Discover">Discover</option>
+          <option value="English">English</option>
+          <option value="French">French</option>
+          <option value="Geogrephy">Geogrephy</option>
+          <option value="German">German</option>
+          <option value="History">History</option>
+          <option value="H-Writing">H-Writing</option>
+          <option value="ICT">ICT</option>
+          <option value="Math">Math</option>
+          <option value="Math2">Math2</option>
+          <option value="MathA">MathA</option>
+          <option value="Mechainc">Mechainc</option>
+          <option value="Philosophy">Philosophy</option>
+          <option value="Physics">Physics</option>
+          <option value="Professional Skills">Professional Skills</option>
+          <option value="Psychology">Psychology</option>
+          <option value="Quran">Quran</option>
+          <option value="Religion">Religion</option>
+          <option value="Rillgion">Rillgion</option>
+          <option value="Science">Sciences</option>
+          <option value="Social">Social</option>
+          <option value="Statistics">Statistics</option>
+          <option value="Vallues and Ethics">Vallues and Ethics</option>
+          <option dir="rtl" value="اكتشف">اكتشف</option>
+          <option dir="rtl" value="خط">خط</option>
+        </select>
+      </div>
+      <div class="field-wrapper">
+        <label class="lab" for="sub">From :</label>
+        <input type="date" required />
+      </div>
+      <div class="field-wrapper">
+        <label class="lab" for="sub">To :</label>
+        <input type="date" required />
+      </div>
+      <br>
+      <input type="submit" value="Display" class="btn-active" />
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
